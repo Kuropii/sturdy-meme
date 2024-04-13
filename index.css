@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    
+    background-color: #ffffff;
+}
+
+.nav-container{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ececea;
+    color: white;
+    padding: 20px;
+    width: 100%; /* Set the width to 100% of the viewport width */
+    height: 400px;
+    top: 0px; /* Start 10 pixels down from the top */
+    
+    /*position: sticky; /* Fixed position to keep the navbar at the top */
+    left: 0; /* Align the left edge of the container with the left edge of the screen */
+    
+}
+
+.nav-container img {
+    margin-top:10px;
+    justify-content: center;
+}
+   
+.navbar { /*navbar*/
+    list-style: none; /* Remove list-style dots */
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start of the flex container */
+    margin-left: 20%; /* Create a margin on the left to push the text 20% from the left */
+    margin-top: 0%;
+
+}
+
+#home a{
+    text-decoration: underline;
+    color: solid black;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a { /*navbar <a href>*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-top:12px;
+    padding-left:16px;
+    padding-right:16px;
+    margin-left: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover { /*when you hover navbar*/
+    text-decoration: underline;
+    color: rgb(0, 164, 240);
+    transition: text-decoration 0.3s;
+}
+
+.welcome h1{
+    font-size: 50px;
+    color:  rgb(0, 0, 0);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+/*base design ends here......................................................................*/
+
+/*content starts here........................................................................*/
+
+/*header*/
+.betterDaily-header{
+    margin:auto;
+    width: 100%;
+    height: 300px;
+
+     /* Background color (fallback for browsers that don't support gradients) */
+     background: rgb(135, 131, 212);
+    
+     /* Linear gradient */
+     background: linear-gradient(90deg, rgba(135, 131, 212, 1) 20%, rgba(129, 131, 218, 1) 37%, rgba(113, 115, 209, 1) 51%, rgba(115, 117, 184, 1) 68%, rgba(158, 159, 198, 1) 92%);
+}
+
+
+.betterDaily-header img{
+   max-width: 100%;
+   max-height: 100%;
+}
+
+/*ft. posts*/
+.post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-decoration: none; /* Remove the underline */
+    
+}
+
+.slideshowTitle-container {
+    padding:0px;
+    font-size: 18px;
+    color:white;
+    border-radius: 10px;
+    background-color: rgb(168, 188, 202);
+}
+
+.slideshow-title {
+    margin-left: 30px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 500px;
+    height: 335px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: rgb(24, 24, 24);
+    overflow: hidden; /* Hide overflow content for fade effect */
+  }
+
+  .mySlides {
+    display: none;
+  }
+ 
+  .mySlides img {
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+    object-fit: cover;
+  }
+
+  .mySlides:first-child {
+    display: block;
+}
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+  
+  .mySlides:hover .overlay {
+    display: block;
+}
+
+/* Add fade effect to the slides */
+.fade {
+    animation: fadeInOut 8s infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 10% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+}
+
+
+.featured-post {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(139, 134, 134);
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove the underline */
+}
+
+.featured-post a{
+    color: white; /* Set the visited link color to white */
+    text-decoration: none; /* Remove the underline */
+}
+
+.featured-post a:visited {
+    color: white; /* Set the visited link color to white */
+}
+
+
+.featured-post h2{
+    margin-left: 50px;
+}
+
+.featured-post img {
+    margin-top:0px;
+    width: 300px;
+    height: 344px;
+    border-radius: 9px;
+}
+
+.featured-post:hover {
+    background-color: rgb(172, 167, 167);
+    cursor: pointer;
+}
+
+.featured-post:hover img{
+    filter: brightness(95%); /* You can adjust the percentage (from 0% to 100%) to control the brightness */
+    transition: filter 0.3s ease;
+}
+.post-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-size: 16px;
+}
+
+.hl-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #eeecee;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    border-radius:20px;
+}
+/*line---------------------------------------*/
+.mid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-content,
+#right-content {
+    width: 500px;
+    height: 1000px;
+    background-color: lightblue;
+    margin: 20px 0px;
+    
+}
+
+.vertical-divider {
+    width: 1px;
+    height: 1040px;
+    background-color: #eeecee;
+    margin-bottom: 20px;
+    margin: 0px 20px;
+}
+
+.mid-container a{
+    color: rgb(0, 0, 0);
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#left-content{
+    align-items: center; /* Center the content vertically */
+}
+
+
+
+
+#ebook-title{
+    text-align: center;
+}
+
+.download_01{
+    background-color: #eeecee;
+    width: 110px;
+    text-decoration: none;
+}
+
+.mid-container a:hover{
+    color:red;
+    background-color: #414141;
+}
+
+/*footer---------------------------------*/
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divider {
+    height: 60px;
+    width: 2px;
+    background-color: white;
+    margin: 0 100px;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-links ul li {
+    margin: 0 20px;
+}
+
+.footer-links ul li:last-child {
+    
+    margin-right: 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+#footerSection_2 ul {
+    list-style: none;
+
+}
+
+
